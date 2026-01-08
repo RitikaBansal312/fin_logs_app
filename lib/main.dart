@@ -1,6 +1,6 @@
-import 'package:fin_logs_app/presentation/view/transaction_screen.dart';
+import 'package:fin_logs_app/core/utils/app_routes.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TransactionPage(),
+      title: 'Fin Logs',
+      initialRoute: AppRoutes.splash,
+      getPages: AppRoutes.routes,
     );
   }
 }
