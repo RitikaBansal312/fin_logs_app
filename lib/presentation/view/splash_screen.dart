@@ -31,19 +31,18 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 32),
+            // const SizedBox(height: 32),
 
             /// Loading Effect
-            const CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.grey),
-              strokeWidth: 3,
-            ),
-
+            // const CircularProgressIndicator(
+            //   valueColor: AlwaysStoppedAnimation<Color>(Colors.grey),
+            //   strokeWidth: 4,
+            // ),
             const SizedBox(height: 12),
 
             const Text(
               'Loading transactions...',
-              style: TextStyle(color: Colors.white70),
+              style: TextStyle(color: Colors.green),
             ),
           ],
         ),
